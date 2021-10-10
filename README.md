@@ -8,6 +8,6 @@ Se puede buscar el clima indicando una ciudad u obtenerlo mediante geolocalizaci
 ![clima](https://user-images.githubusercontent.com/52505789/136680955-88302da4-7690-4d29-8375-e792fbd264e3.png)
 
 ## Link
-[Clima-APP](https://pablomclementep.github.io/Clima-JS/)
+[Clima-APP](https://clima-app-js-pablo.netlify.app/)
 
 ### Pablo Clemente - pclementep@gmail.com
