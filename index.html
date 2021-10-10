@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="header-img"></div>
+
+        <div class="container">
+            <div class="title">
+                <h1>Weather</h1>
+            </div>
+            
+            <span class="error-msg hidden">Error <br> Ingrese una ciudad valida</span>
+            <form class="form">
+                <label for="city" class="label-form">Ingrese una ciudad:</label>
+                <input class="input-form" type="text" id="city" placeholder="ciudad....">
+                <div class="buttons">
+                    <input type="submit" class="btn" value="search">
+                    <input type="button" class="btn-gps">
+                </div>
+            </form>
+            
+            <div class="weather-card">
+                <div class="city">
+                    <h2 class="city-name"></h2>
+                    <p class="date">Viernes 8 de Octubre 12:30 pm </p>
+                </div>
+
+                <div class="temperature">
+                    <img class="icon" src="animated/cloudy-day-3.svg" alt="">
+                    <h2 class="temp"></h2>
+                </div>
+
+                <div class="datos">
+                    <p class="state"></p>
+                    <p class="humidity"></p>
+                    <p class="sensation"></p>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
