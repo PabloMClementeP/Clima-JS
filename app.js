@@ -12,7 +12,7 @@ let $city = d.querySelector(".city-name"),
     $btnLocate = d.querySelector(".btn-gps"),
     monthString="";
 
-let url = `https://api.openweathermap.org/data/2.5/weather?q=Montevideo&units=metric&lang=es&appid=75350c5fe8426d5c17726a1339fac1d0`;
+let url = `https://api.openweathermap.org/data/2.5/weather?q=Montevideo&units=metric&lang=es&appid={Here:id}`;
     
     
 window.addEventListener('load', () =>{
@@ -24,7 +24,7 @@ window.addEventListener('load', () =>{
             navigator.geolocation.getCurrentPosition( position =>{
                 let lon = position.coords.longitude,
                     lat = position.coords.latitude;
-                url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=75350c5fe8426d5c17726a1339fac1d0`
+                url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid={Here:id}`
                 getWeather(url);
             })
         }
@@ -36,7 +36,7 @@ d.addEventListener("submit", e=>{
     e.preventDefault();
     let city = $inputCity.value;
     if(city !== ""){
-        url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=es&appid=75350c5fe8426d5c17726a1339fac1d0`;
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=es&appid={Here:id}`;
         getWeather(url);
         $inputCity.value = "";
     }else{
